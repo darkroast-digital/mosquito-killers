@@ -1,0 +1,122 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Bugs &amp; Disease - Mosquito Killers{% endblock %}
+{% block description %}More than just an annoyance, the mosquito is the deadliest animal on the planet. Over one million people are killed by mosquito-borne diseases each year globally. In Canada, we tend to be less aware of the deadly role mosquitoes play, but over 1,000 Canadians each year experience serious illness or death as a result of a mosquito bite.{% endblock %}
+
+{% block content %}
+<section class="bugs-disease">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Bugs &amp; Disease</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Bugs &amp; Disease</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="bugs-disease-content">
+        <div class="bugs-disease-content__container container">
+            <div class="column-8">
+                <h2>Mosquitoes. What you don't know could hurt you.</h2>
+                <p>More than just an annoyance, the mosquito is the deadliest animal on the planet. Over one million people are killed by mosquito-borne diseases each year globally. In Canada, we tend to be less aware of the deadly role mosquitoes play, but over 1,000 Canadians each year experience serious illness or death as a result of a mosquito bite.</p>
+            </div>
+            <div class="column-4">
+                <img src="assets/img/mos-circle.png" alt="No mosquitos!" draggable="false">
+            </div>
+        </div>
+
+        <div class="protect-yourself__container container">
+            <h3>Do-It-Yourself Mosquito Control</h3>
+            <h2>Simple ways to protect your home and family</h2>
+            <p>Mosquitoes are not only annoying, they're dangerous! The best solution for riding your back yard of these pesky pests is calling us to apply one of our industry leading treatments. However, there are some other things you can do to reduce the mosquito population in your yard until we get there.</p>
+            <div class="container--full">
+                <div class="column-6">
+                    <img src="assets/img/Dollarphotoclub_84402445.jpg" alt="Family with two young children outdoors" draggable="false">
+                </div>
+                <div class="column-6">
+                    <ol>
+                        <li><strong>Get Mosquito Repellent Plants.</strong> There are certain plants that Mosquitoes hate! If you plant or place: feverfew, citronella, catnip and lavender around your yard you’ll create a very mosquito-unfriendly environment.</li>
+                        <li><strong>Eliminate Standing Water.</strong> This is where Mosquitoes lay eggs. Getting rid or reducing standing/stagnant water in and around your yard can help reduce your mosquito population.</li>
+                        <li><strong>Make your yard Bat-Friendly.</strong> The average bat can eat up to 1,000 mosquitoes per night. Purchasing or building a bat house in your yard will invite Natures Own Mosquito Killers to come patrol your yard for free.</li>
+                        <li><strong>Use Mosquito Traps.</strong> Build your own or buy one. Placing one of these in a high mosquito area will reduce the number of mosquitoes that are roaming free to bite you and your family.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# End Bugs-Disease Intro #}
+
+    <div class="mosquito-facts">
+        <div class="mosquito-facts__container container">
+            <div class="column-6">
+                <h1>Quick Facts About Mosquitoes</h1>
+                <p>- There are over 3,000 mosquito species worldwide</p>
+                <p>- Over 150 mosquito species inhabit the US</p>
+                <p>- A relatively small number of species transmit dangerous disease</p>
+                <p>- Only adult female mosquitoes bite</p>
+                <p>- A female mosquito needs one blood meal for every batch of eggs she produces</p>
+                <p>- Mosquitoes feed on nectar, plant juices and decaying plant material</p>
+                <p>- All mosquitoes have 4 distinct life stages: egg, larva, pupa, and adult</p>
+                <p>- Mosquito eggs require standing water to hatch into successful larvae</p>
+                <p>- Mosquito eggs can survive up to seven years before hatching</p>
+                <p>- With a 100% survival rate, a single mosquito could be responsible for over one billion mosquito descendants in less than a month</p>
+            </div>
+        </div>
+    </div>
+
+    {# End Mosquito Facts #}
+
+    <div class="disease">
+        <div class="disease__container container">
+            <h3>Mosquito-Bourne Disease</h3>
+            <h2>Vectors of Infection</h2>
+            <div class="container--full">
+                <div class="column-6">
+                    <h4>West Nile Virus (WNV)</h4>
+                    <p>First found in Uganda in 1937, WNV has spread globally. Its flulike symptoms include fever, headache, and body aches. More serious symptoms include disorientation, muscle weakness, neck stiffness and more. Eighty percent of West Nile cases will never display any symptoms.</p>
+                </div>
+                <div class="column-6">
+                    <h4>Heartworm</h4>
+                    <p>First found in Uganda in 1937, WNV has spread globally. Its flulike symptoms include fever, headache, and body aches. More serious symptoms include disorientation, muscle weakness, neck stiffness and more. Eighty percent of West Nile cases will never display any symptoms.</p>
+                </div>
+                <div class="column-6">
+                    <h4>Encephalitis</h4>
+                    <p>Among the most serious condition linked to mosquitoes, encephalitis is the inflammation of the brain. It starts as a virus that usually resolves itself, but in the cases that it worsens, it can invade the central nervous system and cause encephalitis. Eastern Equine encephalitis (EEE) is the most common encephalitis and can affect humans and horses.</p>
+                </div>
+                <div class="column-6">
+                    <h4>Malaria</h4>
+                    <p>Among the most serious condition linked to mosquitoes, encephalitis is the inflammation of the brain. It starts as a virus that usually resolves itself, but in the cases that it worsens, it can invade the central nervous system and cause encephalitis. Eastern Equine encephalitis (EEE) is the most common encephalitis and can affect humans and horses.</p>
+                </div>
+                <div class="column-6">
+                    <h4>Zika Virus</h4>
+                    <p>Spread through the bite of an infected mosquito, the Zika virus is an emerging virus garnering much media-attention. Symptoms of the virus include fever, skin rash, and conjunctivitis and typically last less than a week. A connection between Zika in pregnant women and birth defects is currently being investigated.</p>
+                </div>
+                <div class="column-6">
+                    <h4>Chikungunya</h4>
+                    <p>With outbreaks in Africa, Asia, and Europe, the Chikungunya virus was first found in the Americas in 2013 in the Caribbean. This mosquito-borne disease causes fever, joint pain, headaches, rash and swelling. There is currently no vaccine for chikungunya and travelers to affected areas are encouraged to protect themselves against mosquito bites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# End Disease #}
+
+    <div class="bottom-bar">
+        <div class="bottom-bar__container container">
+            <h4>Are you ready to take back your yard?</h4>
+            <a href="{{ path_for('connect') }}" class="button">It's go time!</a>
+        </div>
+    </div>
+    
+    <!-- End Bottom Bar -->
+
+</section>
+
+{% endblock %}

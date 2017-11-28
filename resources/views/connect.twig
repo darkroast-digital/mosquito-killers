@@ -1,0 +1,75 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Connect - Mosquito Killers{% endblock %}
+{% block description %}If you have questions, we'd love to hear from you.{% endblock %}
+
+{% block content %}
+<section class="connect">
+
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Connect</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Connect</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="connect-content">
+        <div class="connect-content__container container">
+            <h3>Contact Us</h3>
+            <h2>If you have questions, we'd love to hear from you.</h2>
+
+            <div id="map"></div>
+
+            <div class="container--full">
+                <div class="column-6">
+                    <form action="{{ path_for('home') }}" method="post" class="form">
+                        <div class="container--full">
+                            <div class="column-9">
+                                <i class="fa fa-user-o" aria-hidden="true"></i><input type="text" name="name" id="name" placeholder="Your Name" required="required">
+                            </div>
+                            <div class="column-9">
+                                <i class="fa fa-phone" aria-hidden="true"></i><input type="text" name="phone" id="phone" placeholder="Your Phone Number">
+                            </div>
+                            <div class="column-9">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><input type="email" name="email" id="email" placeholder="Your Email" required="required">
+                            </div>
+                            <div class="column-12">
+                                <i class="fa fa-pencil" aria-hidden="true"></i><textarea name="message" id="message" placeholder="Your Message" required="required"></textarea>
+                            </div>
+                            <div class="column-12">
+                                <div class="g-recaptcha" data-sitekey="6LcwPjUUAAAAACqi8M7t9E-8pfmehExcTaZyg8Fo"></div>
+                            </div>
+
+                            <button class="button submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="column-6">
+                    <img src="assets/img/logo.png" alt="Mosquito Killers" draggable="false">
+                    <div class="contact-info">
+                        <p><i class="fa fa-building" aria-hidden="true"></i> Mosquito Killers</p>
+                        <p><i class="fa fa-home" aria-hidden="true"></i> 2955 County Rd 42, Windsor, ON N9A 6J3, Canada</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 519.567.7737</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@mosquitokillers.ca">info@mosquitokillers.ca</a></p>
+                    </div>
+                    <div class="fb-like" data-href="https://www.facebook.com/Mosquito-Killers-1179112438766442/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+
+                    {# google plus button? #}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# End Connect #}
+</section>
+
+{% endblock %}

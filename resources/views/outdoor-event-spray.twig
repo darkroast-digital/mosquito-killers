@@ -1,0 +1,51 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Outdoor Event Spray - Mosquito Killers{% endblock %}
+{% block description %}Are you planning an outdoor wedding, graduation party or other outdoor event? Don’t let buzzing, biting mosquitoes ruin your special day. Our special events spray will keep mosquitoes off your guest list.{% endblock %}
+
+{% block content %}
+<section class="outdoor">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Outdoor Event Spray</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Outdoor Event Spray</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="header-image">
+        <div class="header-image__container container--full">
+            <img src="assets/img/event2.jpg" alt="Flower girl and ring bearer walking barefoot along path" draggable="false">
+        </div>
+    </div>
+
+    <!-- End Header Image -->
+
+    <div class="outdoor-content">
+        <div class="outdoor-content__container container">
+            <div class="img-container column-6">
+                <img src="assets/img/event.jpg" alt="Outdoor Event Sprays" draggable="false">
+            </div>
+            <div class="content-container column-6">
+                <h2>Effective mosquito control for all your outdoor events.</h2>
+                <p>Are you planning an outdoor wedding, graduation party or other outdoor event? Don’t let buzzing, biting mosquitoes ruin your special day. Our special events spray will keep mosquitoes off your guest list.</p>
+                <p>About 24-48 hours prior to guests’ arrival, we’ll lay down a barrier spray that includes extra protection against biting, stinging insects. It’s exactly what you need for a perfect party:</p>
+                <p>- Eliminates or greatly reduces the number of mosquitoes that might otherwise bite guests or hover around food.</p>
+                <p>- Dries in 30 minutes, leaving no odour or visible residue.</p>
+                <p>- Is applied long before your food and dinnerware arrive, so there’s no opportunity for contamination.</p>
+                <p>- Provides protection day and night through your entire event.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {# End Outdoor #}
+
+{% endblock %}

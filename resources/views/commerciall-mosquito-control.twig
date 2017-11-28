@@ -1,0 +1,48 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Commercial Mosquito Control - Mosquito Killers{% endblock %}
+{% block description %}Keep your employees, customers, and the general public safer by taking precautions! Commercial  mosquito control require a completely different approach than residential control, yet it is just as important. That’s why we offer mosquito control support for businesses across Canada.{% endblock %}
+
+{% block content %}
+<section class="commercial">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Commercial Mosquito Control</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Commercial Mosquito Control</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="header-image">
+        <div class="header-image__container container--full">
+            <img src="assets/img/commercial2.jpg" alt="Family laying in the grass laughing" draggable="false">
+        </div>
+    </div>
+
+    <!-- End Header Image -->
+
+    <div class="commercial-content">
+        <div class="commercial-content__container container">
+            <div class="img-container column-6">
+                <img src="assets/img/commercial.jpg" alt="Commercial Mosquito Control" draggable="false">
+            </div>
+            <div class="content-container column-6">
+                <h2>Commercial mosquito control solutions</h2>
+                <p>Keep your employees, customers, and the general public safer by taking precautions!</p>
+                <p>Commercial  mosquito control require a completely different approach than residential control, yet it is just as important. That’s why we offer mosquito control support for businesses across Canada.</p>
+                <p>Targeted, professional and effective control that is tailored to your area and the different risks involved combined with the honesty, integrity and values that come with a family-owned business is what allows us to stand apart and give you the protection you need.</p>
+                <p>From start to finish, we can treat mosquito problems anywhere from Golf Courses to Parks to outdoor theaters and pavilions, and everything in between.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    {# End Commercial #}
+
+{% endblock %}

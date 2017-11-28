@@ -1,0 +1,49 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}All Natural Mosquito Control - Mosquito Killers{% endblock %}
+{% block description %}If you prefer to avoid all synthetics, Mosquito Killers offers an all-natural solution as an ideal alternative for mosquito control. While our Barrier Protection Spray works primarily as a mosquito eliminator, our all-natural treatment eliminates pests on contact and then continues as a repellent for up to 14 days.{% endblock %}
+
+{% block content %}
+<section class="natural">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>All Natural Mosquito Control</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>All Natural Mosquito Control</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="header-image">
+        <div class="header-image__container container--full">
+            <img src="assets/img/natural2.jpg" alt="Family gardening in mosquito-free garden" draggable="false">
+        </div>
+    </div>
+
+    <!-- End Header Image -->
+
+    <div class="natural-content">
+        <div class="natural-content__container container">
+            <div class="img-container column-6">
+                <img src="assets/img/natural.jpg" alt="All Natural Mosquito Control" draggable="false">
+            </div>
+            <div class="content-container column-6">
+                <h2>Go all-natural with your mosquito control.</h2>
+                <p>If you prefer to avoid all synthetics, Mosquito Killers offers an all-natural solution as an ideal alternative for mosquito control.</p>
+                <p>While our Barrier Protection Spray works primarily as a mosquito eliminator, our all-natural treatment eliminates pests on contact and then continues as a repellent for up to 14 days.</p>
+                <p>Our all-natural mosquito treatment is applied to the areas of your property that mosquitoes are known to harbor and feed. It is made up of essential oils and has a slight botanical fragrance that dissipates within a few hours of application.</p>
+                <p>Since this all-natural mosquito control breaks down more quickly, it needs to be applied every 14 days for continuous protection (as opposed to the 21-day cycle of our Barrier Protection Spray).</p>
+                <p>This all-natural repellent is not quite as effective as our traditional mosquito control solutions. However, depending on your own yard and needs, it may be right for you. And, of course, if you’re not 100% satisfied, we’ll make it right with another spray as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    {# End Natural #}
+
+{% endblock %}

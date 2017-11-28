@@ -1,0 +1,53 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Services - Mosquito Killers{% endblock %}
+{% block description %}Are pesky mosquitoes ruining your outdoor enjoyment? As Canada’s Trusted mosquito control, Mosquito Killers offers a number of mosquito control solutions that will allow you to take back your yard. Our friendly and knowledgeable staff can help you select the solution that’s right for you.{% endblock %}
+
+{% block content %}
+<section class="services">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Services</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="header-image">
+        <div class="header-image__container container--full">
+            <img src="assets/img/banner2.jpg" alt="Girl in tent enjoying her mosquito-free backyard" draggable="false">
+        </div>
+    </div>
+
+    <!-- End Header Image -->
+
+    <div class="services-content">
+        <div class="services-content__container container">
+            <h3><a href="{{ path_for('residential') }}">Residential Mosquito Control</a> <span>|</span> <a href="{{ path_for('natural') }}">All Natural Mosquito Control</a> <span>|</span> <a href="{{ path_for('outdoor') }}">Outdoor Event Spray</a> <span>|</span> <a href="{{ path_for('commercial') }}">Commercial Mosquito Control</a></h3>
+            <h2>Stop the bite. Enjoy your yard again.</h2>
+            <p>Are pesky mosquitoes ruining your outdoor enjoyment? As Canada’s Trusted mosquito control, Mosquito Killers offers a number of mosquito control solutions that will allow you to take back your yard. Our friendly and knowledgeable staff can help you select the solution that’s right for you.</p>
+            <p>To learn more, click on a service above.</p>
+        </div>
+    </div>
+
+    {# End Services #}
+
+    <div class="bottom-bar">
+        <div class="bottom-bar__container container">
+            <h4>Are you ready to take back your yard?</h4>
+            <a href="{{ path_for('connect') }}" class="button">It's go time!</a>
+        </div>
+    </div>
+    
+    <!-- End Bottom Bar -->
+
+</section>
+
+{% endblock %}

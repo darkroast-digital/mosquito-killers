@@ -1,0 +1,50 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Franchise Opportunities - Mosquito Killers{% endblock %}
+{% block description %}Discover the excitement of of being your own boss! Imagine being involved in the local community, owning and operating your own business to deliver the best possible experience for your customers.{% endblock %}
+
+{% block content %}
+<section class="franchise-opportunities">
+    <div class="page-head">
+        <div class="page-head__container container">
+            <h1>Franchise Opportunities</h1>
+        </div>
+
+        <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li> / </li>
+                <li>Franchise Opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    {# End Page Head #}
+
+    <div class="franchise-opportunities-content">
+        <div class="franchise-opportunities-content__container container">
+            <div class="column-6">
+                <img src="assets/img/team.png" alt="Mosquito Killers employees back-to-back" draggable="false">
+            </div>
+            <div class="column-6">
+                <h2>Be Your Own Boss and Make A Difference.</h2>
+                <p>If you’re looking for a great franchise opportunities in Canada, you’ve come to the right place.</p>
+                <p>Discover the excitement of of being your own boss! Imagine being involved in the local community, owning and operating your own business to deliver the best possible experience for your customers.</p>
+                <p>At Mosquito Killers we offer our franchisees the freedom on operating their own companies with the security of having some added assistance.</p>
+                <p>We ensure that all of our franchisees are fully capable and equipped to provide the highest quality service and effectively represent the Mosquito Killers brand.</p>
+                <p>Contact us today to find out more or get your Franchisee Application.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="bottom-bar__container container">
+            <h4>Change your life with a new opportunity today!</h4>
+            <a href="{{ path_for('connect') }}" class="button">Contact our Franchising Department</a>
+        </div>
+    </div>
+    
+    <!-- End Bottom Bar -->
+
+</section>
+
+{% endblock %}

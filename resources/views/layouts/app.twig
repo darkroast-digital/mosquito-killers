@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#4a5623">
+
+    <!-- Title and Description -->
+
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="keywords" content="mosquito, mosquitoes, pests, pest control, mosquito control, mosquito killers, exterminators, exterminator, take back your yard, windsor mosquito control, bugs, bug control, windsor bug control, mosquito pest control, fight the bite">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="assets/img/fav.png">
+    
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Mosquito Killers">
+    <meta property="og:description" content="Mosquito Spray and Control">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="mosquitokillers.ca">
+    <meta property="og:site_name" content="Mosquito Killers">
+    <meta property="og:image" content="assets/img/og.jpg">
+    
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=110296476337593';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    {% include 'partials/off-canvas.twig' %}
+    <header>
+        <div class="welcome-bar" id="nav">
+            <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:519.567.7737">519.567.7737</a></p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@mosquitokillers.ca">info@www.mosquitokillers.darkroast.co</a></p>
+        </div>
+        <nav class="nav">
+            <div class="header-bar container">
+                <div class="column-3">
+                    <a href="{{ path_for('home') }}">
+                        {# logo #}
+                        <img src="assets/img/logo.png" alt="Mosquito Killers" draggable="false">
+                    </a>
+                </div>
+                <div class="column-9">
+                    <ul class="nav__navbar is--active">
+                        <li class="{% if current_path == path_for('home') %}is--active{% endif %}"><a href="{{ path_for('home') }}">Home</a></li>
+                        <li class="{% if current_path == path_for('services') %}is--active{% endif %}"><a href="{{ path_for('services') }}">Services</a></li>
+                        <li class="{% if current_path == path_for('bugs-disease') %}is--active{% endif %}"><a href="{{ path_for('bugs-disease') }}">Bugs &amp; Disease</a></li>
+                        <li class="{% if current_path == path_for('franchise-opprtunities') %}is--active{% endif %}"><a href="{{ path_for('franchise-opprtunities') }}">Franchise Opportunities</a></li>
+                        <li class="{% if current_path == path_for('faq') %}is--active{% endif %}"><a href="{{ path_for('faq') }}">FAQs</a></li>
+                        <li class="{% if current_path == path_for('connect') %}is--active{% endif %}"><a href="{{ path_for('connect') }}">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% include 'partials/hamburger.twig' %}
+    </header>
+
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+        <div class="content">
+            {% include 'partials/overlay.twig' %}
+            {% include 'partials/contact-popup.twig' %}
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    {# contact and up arrow shortcuts #}
+    <a href="#nav" class="up-arrow on">
+        <span class="go-up">
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+
+    <div class="email-shortcut">
+        <span class="mail">
+            <i class="fa fa-envelope"></i>
+        </span>
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer-info container">
+                <div class="column-3">
+                    <img src="assets/img/mkwhite.png" alt="Mosquito Killers" draggable="false">
+                </div>
+                <div class="column-3 contact">
+                    <p><i class="fa fa-home" aria-hidden="true"></i> 2955 County Rd 42, Windsor, ON N9A 6J3, Canada</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> 519.567.7737</p>
+                </div>
+                <div class="column-3 payments">
+                    <img src="assets/img/payments.png" alt="Payments accepted: MasterCard, Visa, American Express" draggable="false">
+                </div>
+                <div class="column-3 social">
+                    <a href="https://www.facebook.com/Mosquito-Killers-1179112438766442/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-youtube-square"></i></a>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <p>Copyright All Rights Reserved &copy; 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    {# google maps api #}
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQyuvPl-mQTSSo2kgcyIw-DEWH8bbwqH0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="/assets/js/app.js"></script>
+
+    {# Mister Sandman...sand me a man... #}
+</body>
+</html>

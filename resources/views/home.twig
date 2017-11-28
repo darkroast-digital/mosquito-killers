@@ -1,0 +1,85 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Mosquito Killers - Mosquito Spray and Control{% endblock %}
+{% block description %}Are mosquitoes ruining your outdoor fun? Mosquito Killers can help you protect your yard with our comprehensive mosquito control solutions. We guarantee that once we get to them, those pesky mosquitoes will be gone. And if they come back, so will we. It's our promise.{% endblock %}
+
+{% block content %}
+<section class="home">
+
+    <div class="hero">
+        <div class="hero__container container">
+            <img src="assets/img/headerGraphic.png" alt="Reclaim Your Backyard" draggable="false">
+            <h4>Fight the bite with mosquito control.</h4>
+            <a href="{{ path_for('services') }}" class="button">Learn More</a>
+        </div>
+    </div>
+
+    <!-- End Home/Hero -->
+
+    <div class="intro">
+        <div class="intro__container container">
+            <div class="column-4">
+                <h2>Fight the Bite With Mosquito Control.</h2>
+                <p>Are mosquitoes ruining your outdoor fun? Mosquito Killers can help you protect your yard with our comprehensive mosquito control solutions.</p>
+                <a href="{{ path_for('services') }}" class="button">See Our Services</a>
+            </div>
+            <div class="column-4">
+                <img src="assets/img/term-circle.png" alt="Mosquito Killers Terminator" draggable="false">
+            </div>
+            <div class="column-4">
+                <h2>What You Don't Know Could Hurt You.</h2>
+                <p>Mosquitoes are not only annoying, but can be dangerous. Learn more about these pests and how you can help control them on your property and in the community.</p>
+                <a href="{{ path_for('bugs-disease') }}" class="button">Learn More</a>
+            </div>
+            <div class="title">
+                <h3>Reclaim Your Backyard With Mosquito Killers</h3>
+            </div>
+            <iframe src="https://player.vimeo.com/video/168822081"></iframe>
+        </div>
+    </div>
+    
+    <!-- End Intro -->
+
+    <div class="guarantee">
+        <div class="guarantee__container container">
+            <img src="assets/img/guarentee.png" alt="100% Satisfaction Guarentee" class="slide-in">
+            <h3>We guarantee that once we get to them, those pesky mosquitoes will be gone. And if they come back, so will we. It's our promise.</h3>
+            <p>We’re committed to keeping your home and business mosquito free!. We’ll do whatever it takes to keep them out.</p>
+            <p>With our 100% satisfaction guarantee you don’t have to worry about those pesky mosquitoes coming back. Because if they come back, so will we. We’ll continue to treat your home or business until your satisfied so that you and your family can rest easy.</p>
+        </div>
+    </div>
+    
+    <!-- End Guarantee -->
+
+    <div class="who-we-are">
+        <div class="who-we-are__container container">
+            <div class="column-8">
+                <h2>Canada's Trusted Mosquito Control Company.</h2>
+                <h2>It's not what we do. It's who we are.</h2>
+                <p>Mosquito Killers is proud to be Canada’s most trusted mosquito elimination company, dedicated exclusively to controlling the annoying outdoor pests that ruin your outdoor experience.</p>
+                <p>But we’re more than that. We protect families locally and globally from the nuisance and dangers of mosquitoes.</p>
+                <ul>
+                    <li>We approach every day with a passion to do our best, so our clients can enjoy their yards and outdoor spaces.</li>
+                    <li>We strive to provide extraordinary service in every aspect of our client relationships, from the first time we answer your phone call to continually treating your property with the utmost respect.</li>
+                    <li>We educate consumers worldwide with strong messages on how to avoid mosquito bites in memorable ways.</li>
+                </ul>
+            </div>
+            <div class="column-4">
+                <img src="assets/img/terminator.png" alt="Mosquito Killers Terminator" draggable="false">
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Who We Are -->
+
+    <div class="bottom-bar">
+        <div class="bottom-bar__container container">
+            <h4>Are you ready to take back your yard?</h4>
+            <a href="{{ path_for('connect') }}" class="button">It's go time!</a>
+        </div>
+    </div>
+    
+    <!-- End Bottom Bar -->
+
+</section>
+    
+{% endblock %}
